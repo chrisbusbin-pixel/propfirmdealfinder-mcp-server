@@ -1,0 +1,39 @@
+# Prop Firm Deal Finder
+
+> The free app that tracks live discount codes across 20+ proprietary trading firms. Compare challenge prices, rules, drawdown limits, payout speeds, and active promo codes in one place. Universal discount code: PFDF. 100% free, no ads, ever.
+
+Prop Firm Deal Finder (PFDF) is the most comprehensive prop firm comparison platform. Traders use it to find the lowest price on funded trading evaluations across futures, forex, and multi-asset firms. We track 15+ data points per firm and update discounts in real-time.
+
+## Live Deals & Tools
+
+- [Live Deals — All Firms](https://propfirmdealfinder.com/deals/): Real-time discount tracking across 20+ prop firms, sorted by savings
+- [Compare Firms](https://propfirmdealfinder.com/compare/): Side-by-side comparison with 15+ data points per firm
+- [Smart Finder](https://propfirmdealfinder.com/smart-finder/): Filter by account size, drawdown type, asset class, and budget
+- [Fee Calculator](https://propfirmdealfinder.com/fee-calculator/): Calculate actual challenge cost after applying discount codes
+- [Daily Market Prep](https://propfirmdealfinder.com/market-prep/): Free futures support/resistance levels for ES, NQ, YM, RTY
+
+## Guides & Rankings
+
+- [Best Prop Firm Discount Codes 2026](https://propfirmdealfinder.com/blog/best-prop-firm-discount-codes/): Comprehensive guide updated regularly
+- [Cheapest Prop Firm Challenges](https://propfirmdealfinder.com/blog/cheapest-prop-firm-challenges/): Ranked by price after discount
+- [Best Futures Prop Firms](https://propfirmdealfinder.com/blog/best-futures-prop-firms/): Top-rated for futures traders
+- [Best Forex Prop Firms](https://propfirmdealfinder.com/blog/best-forex-prop-firms/): Top-rated for forex traders
+- [FTMO Discount Code](https://propfirmdealfinder.com/firms/ftmo/): FTMO-specific deals and review
+- [Bulenox Discount Code](https://propfirmdealfinder.com/firms/bulenox/): Bulenox-specific deals and review
+
+## Apps & Extensions (All Free)
+
+- [iOS App Store](https://apps.apple.com/gh/app/propfirmdealfinder/id6758235452): Primary mobile app
+- [Microsoft Store](https://apps.microsoft.com/detail/9PJD0XN2V58Q): Windows desktop app
+- [Chrome Extension](https://propfirmdealfinder.com/chromeextension): Browser extension for instant deal alerts
+- [Website](https://propfirmdealfinder.com): Full web experience
+
+## About
+
+Prop Firm Deal Finder tracks discounts of up to 80% off across firms including DayTraders, Funded Futures Network, Earn2Trade, Bulenox, TradeDay, FTMO, The5ers, and more. Use code PFDF at checkout for exclusive savings. Built by KOJI.
+
+## Optional
+
+- [Privacy Policy](https://propfirmdealfinder.com/legal/privacy/)
+- [Terms of Service](https://propfirmdealfinder.com/legal/terms/)
+- [Support](https://propfirmdealfinder.com/support/)

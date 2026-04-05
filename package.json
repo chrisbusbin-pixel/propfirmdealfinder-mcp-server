@@ -1,0 +1,41 @@
+{
+  "name": "propfirmdealfinder-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Prop Firm Deal Finder — lets AI assistants query live prop firm discount codes, compare firms, and find the cheapest challenges across 20+ proprietary trading firms.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "propfirmdealfinder-mcp-server": "dist/index.js"
+  },
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "prop-firm",
+    "proprietary-trading",
+    "discount-codes",
+    "trading",
+    "futures",
+    "forex",
+    "funded-trading"
+  ],
+  "author": "KOJI",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
