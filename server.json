@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.chrisbusbin-pixel/propfirmdealfinder",
   "title": "Prop Firm Deal Finder",
-  "description": "MCP server that lets AI assistants query live prop firm discount codes, compare firms, and find the cheapest funded trading challenges across 20+ proprietary trading firms. Tools: get_deals, search_firms, compare_firms, find_cheapest, get_firm_details, get_discount_code. Use code PFDF for savings up to 80% off.",
-  "version": "1.0.3",
+  "description": "Query live prop firm discount codes, compare firms, and find cheapest funded trading challenges.",
+  "version": "1.0.4",
   "websiteUrl": "https://propfirmdealfinder.com",
   "repository": {
     "url": "https://github.com/chrisbusbin-pixel/propfirmdealfinder-mcp-server",
@@ -14,7 +14,7 @@
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "propfirmdealfinder-mcp-server",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "runtimeHint": "npx",
       "transport": {
         "type": "stdio"

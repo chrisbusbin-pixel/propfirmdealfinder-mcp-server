@@ -1,6 +1,6 @@
 {
   "name": "propfirmdealfinder-mcp-server",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "mcpName": "io.github.chrisbusbin-pixel/propfirmdealfinder",
   "description": "MCP server for Prop Firm Deal Finder — lets AI assistants query live prop firm discount codes, compare firms, and find the cheapest challenges across 20+ proprietary trading firms.",
   "type": "module",
