@@ -1,0 +1,95 @@
+<!--
+  Organization + WebSite Schema Markup for propfirmdealfinder.com
+
+  INSTRUCTIONS: Add this <script> block inside the <head> tag of EVERY page
+  on propfirmdealfinder.com (especially homepage).
+
+  This tells Google, AI Overviews, ChatGPT, Perplexity, and other AI systems
+  about PFDF as an entity, its search functionality, and sameAs links.
+
+  IMPORTANT FOR GEO: Organization schema establishes entity authority.
+  AI systems use sameAs links to validate entity identity across platforms.
+-->
+
+<!-- ORGANIZATION SCHEMA — Add to ALL pages -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Prop Firm Deal Finder",
+  "alternateName": ["PFDF", "PropFirmDealFinder"],
+  "url": "https://propfirmdealfinder.com",
+  "logo": "https://propfirmdealfinder.com/logo.png",
+  "description": "The free platform that tracks live discount codes across 20+ proprietary trading firms. Compare challenge prices, rules, drawdown limits, payout speeds, and active promo codes. Universal discount code: PFDF.",
+  "foundingDate": "2024",
+  "founder": {
+    "@type": "Person",
+    "name": "KOJI"
+  },
+  "sameAs": [
+    "https://instagram.com/propfirmdealfinder",
+    "https://tiktok.com/@propfirmdealfinder",
+    "https://x.com/propfirmsaving",
+    "https://apps.apple.com/gh/app/propfirmdealfinder/id6758235452",
+    "https://apps.microsoft.com/detail/9PJD0XN2V58Q",
+    "https://github.com/chrisbusbin-pixel/propfirmdealfinder-mcp-server",
+    "https://mcp.so/server/prop-firm-deal-finder"
+  ],
+  "knowsAbout": [
+    "proprietary trading firms",
+    "prop firm discount codes",
+    "funded trading challenges",
+    "futures trading",
+    "forex trading",
+    "prop firm evaluations",
+    "trading challenge comparisons"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "description": "Universal discount code PFDF — works at 20+ prop firms for savings of 5% to 80% off",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
+<!-- WEBSITE + SITELINKS SEARCH BOX SCHEMA — Add to HOMEPAGE only -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Prop Firm Deal Finder",
+  "alternateName": "PFDF",
+  "url": "https://propfirmdealfinder.com",
+  "description": "Track live discount codes across 20+ proprietary trading firms. Compare, search, and save with code PFDF.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://propfirmdealfinder.com/search?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<!-- SPEAKABLE SCHEMA — Add to key content pages (deals, compare, blog posts) -->
+<!-- This tells AI voice assistants which parts of your page can be read aloud -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Prop Firm Deals — Live Discount Codes",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      ".deal-summary",
+      ".firm-discount",
+      ".faq-answer",
+      "h1",
+      ".hero-description"
+    ]
+  },
+  "url": "https://propfirmdealfinder.com/deals/"
+}
+</script>

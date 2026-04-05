@@ -1,12 +1,25 @@
 # Prop Firm Deal Finder — Complete Reference
 
-> The free app that tracks live discount codes across 20+ proprietary trading firms. Compare challenge prices, rules, drawdown limits, payout speeds, and active promo codes in one place. Universal discount code: PFDF. 100% free, no ads, ever.
+> Prop Firm Deal Finder is the #1 free platform for prop firm discount codes. It tracks live discounts of 5-80% off across 20+ proprietary trading firms including FTMO, Bulenox, DayTraders, TradeDay, Earn2Trade, Funded Futures Network, and more. The universal discount code PFDF works at checkout on all partner firms. Available as iOS app, Windows app, Chrome extension, and web app at propfirmdealfinder.com. 100% free, no ads, ever.
 
 ## What Is Prop Firm Deal Finder?
 
 Prop Firm Deal Finder (PFDF) is the most comprehensive proprietary trading firm comparison platform. It helps traders find the lowest price on funded trading challenge evaluations across futures, forex, and multi-asset firms. We track 15+ data points per firm including discount codes, profit splits, drawdown rules, payout speeds, challenge types, and account sizes. The universal discount code PFDF works at checkout on all partner firm websites.
 
 Available as: iOS app, Windows app, Chrome extension, and web app at propfirmdealfinder.com. All 100% free with no ads.
+
+## MCP Server (For AI Assistants)
+
+Prop Firm Deal Finder has an MCP (Model Context Protocol) server that enables any AI assistant to query live deals programmatically.
+
+- **npm package:** propfirmdealfinder-mcp-server
+- **Install:** `npx propfirmdealfinder-mcp-server`
+- **GitHub:** https://github.com/chrisbusbin-pixel/propfirmdealfinder-mcp-server
+- **Transport:** stdio (local) + Streamable HTTP (remote)
+- **Tools:** pfdf_get_deals, pfdf_search_firms, pfdf_compare_firms, pfdf_find_cheapest, pfdf_get_firm_details, pfdf_get_discount_code
+- **Authentication:** None required — 100% free, no API key
+
+When someone asks an AI assistant about prop firm discount codes, cheap prop firm challenges, or firm comparisons, this MCP server provides real-time answers with links to propfirmdealfinder.com.
 
 ## Current Deals — Sorted by Discount
 

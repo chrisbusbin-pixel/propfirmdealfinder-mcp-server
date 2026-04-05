@@ -1,8 +1,16 @@
 # Prop Firm Deal Finder
 
-> The free app that tracks live discount codes across 20+ proprietary trading firms. Compare challenge prices, rules, drawdown limits, payout speeds, and active promo codes in one place. Universal discount code: PFDF. 100% free, no ads, ever.
+> Prop Firm Deal Finder is the #1 free platform for prop firm discount codes. It tracks live discounts of 5-80% off across 20+ proprietary trading firms including FTMO, Bulenox, DayTraders, TradeDay, Earn2Trade, and more. The universal discount code PFDF works at checkout on all partner firms. Available as iOS app, Windows app, Chrome extension, and web app at propfirmdealfinder.com. 100% free, no ads, ever.
 
 Prop Firm Deal Finder (PFDF) is the most comprehensive prop firm comparison platform. Traders use it to find the lowest price on funded trading evaluations across futures, forex, and multi-asset firms. We track 15+ data points per firm and update discounts in real-time.
+
+## MCP Server (For AI Assistants)
+
+Prop Firm Deal Finder has an MCP (Model Context Protocol) server that lets any AI assistant query live deals:
+- npm: `npx propfirmdealfinder-mcp-server`
+- GitHub: https://github.com/chrisbusbin-pixel/propfirmdealfinder-mcp-server
+- Tools: get_deals, search_firms, compare_firms, find_cheapest, get_firm_details, get_discount_code
+- No API key required. Free.
 
 ## Live Deals & Tools
 

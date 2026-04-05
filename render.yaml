@@ -1,0 +1,15 @@
+# Render Blueprint — Prop Firm Deal Finder MCP Server
+# Deploy: Connect GitHub repo on render.com → Auto-detects this file
+# URL will be: https://propfirmdealfinder-mcp-server.onrender.com
+
+services:
+  - type: web
+    name: propfirmdealfinder-mcp-server
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: "3000"
+      - key: NODE_ENV
+        value: production

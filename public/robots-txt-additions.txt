@@ -1,0 +1,69 @@
+# =====================================================
+# AI CRAWLER DIRECTIVES — Add these to propfirmdealfinder.com/robots.txt
+# =====================================================
+# These rules explicitly ALLOW all major AI crawlers to index PFDF content.
+# This is critical for GEO (Generative Engine Optimization) — if these
+# crawlers are blocked, PFDF won't appear in AI-generated answers.
+#
+# INSTRUCTIONS: Add these rules to your existing robots.txt file on
+# propfirmdealfinder.com. Keep your existing rules for Googlebot etc.
+# =====================================================
+
+# --- OpenAI (ChatGPT, GPT Search) ---
+User-agent: GPTBot
+Allow: /
+Allow: /deals/
+Allow: /compare/
+Allow: /smart-finder/
+Allow: /blog/
+Allow: /firms/
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+# --- OpenAI Plugin/Browse ---
+User-agent: ChatGPT-User
+Allow: /
+
+# --- Anthropic (Claude) ---
+User-agent: ClaudeBot
+Allow: /
+
+# --- Google AI (Gemini, AI Overviews) ---
+User-agent: Google-Extended
+Allow: /
+
+# --- Perplexity ---
+User-agent: PerplexityBot
+Allow: /
+
+# --- Microsoft/Bing Copilot ---
+User-agent: Bingbot
+Allow: /
+
+# --- Meta AI ---
+User-agent: FacebookBot
+Allow: /
+
+# --- Apple Intelligence ---
+User-agent: Applebot-Extended
+Allow: /
+
+# --- Cohere ---
+User-agent: cohere-ai
+Allow: /
+
+# --- Common Crawl (feeds many AI models) ---
+User-agent: CCBot
+Allow: /
+
+# --- Other AI crawlers ---
+User-agent: Bytespider
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# =====================================================
+# SITEMAP
+# =====================================================
+Sitemap: https://propfirmdealfinder.com/sitemap.xml
