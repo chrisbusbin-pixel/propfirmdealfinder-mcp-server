@@ -15,18 +15,62 @@ An MCP (Model Context Protocol) server that lets AI assistants query live prop f
 | `pfdf_get_firm_details` | Full profile for a specific firm |
 | `pfdf_get_discount_code` | Get the discount code (universal or firm-specific) |
 
-## Quick Start
+## Quick Start — Local (stdio)
 
 ```bash
-# Install dependencies
+# Install via npx (no clone needed)
+npx propfirmdealfinder-mcp-server
+
+# Or install globally
+npm install -g propfirmdealfinder-mcp-server
+propfirmdealfinder-mcp-server
+```
+
+### Claude Desktop Configuration
+
+Add this to your Claude Desktop config (`claude_desktop_config.json`):
+
+```json
+{
+  "mcpServers": {
+    "propfirmdealfinder": {
+      "command": "npx",
+      "args": ["-y", "propfirmdealfinder-mcp-server"]
+    }
+  }
+}
+```
+
+### From Source
+
+```bash
+git clone https://github.com/chrisbusbin-pixel/propfirmdealfinder-mcp-server.git
+cd propfirmdealfinder-mcp-server
 npm install
-
-# Build
 npm run build
-
-# Run
 npm start
 ```
+
+## Quick Start — Remote (HTTP/Streamable HTTP)
+
+For remote deployments (Smithery, hosted, etc.):
+
+```bash
+# Start HTTP server (default port 3000)
+npm run start:http
+
+# Custom port
+PORT=8080 npm run start:http
+```
+
+**Endpoints:**
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/mcp` | POST | MCP Streamable HTTP endpoint (JSON-RPC) |
+| `/mcp` | GET | SSE stream for server-initiated messages |
+| `/mcp` | DELETE | Close session |
+| `/health` | GET | Health check / server info |
 
 No API key required. No authentication needed. 100% free.
 
@@ -45,61 +89,17 @@ These are the kinds of questions that will trigger this MCP server:
 
 The server includes data for 19 active partner firms across futures, forex, and multi-asset categories. Discounts range from 5% to 80% off. All firms accept the universal code **PFDF**.
 
-## Publishing to MCP Registries
+## Registry Listings
 
-### 1. Smithery (Primary)
+This server is published on the following MCP registries:
 
-```bash
-# Install Smithery CLI
-npm install -g @anthropic-ai/smithery
-
-# Login
-smithery login
-
-# Publish (from project root)
-smithery mcp publish
-```
-
-Or via the web UI:
-1. Go to [smithery.ai/new](https://smithery.ai/new)
-2. Connect your GitHub account
-3. Select this repository
-4. Click "Deploy"
-
-### 2. Official MCP Registry
-
-1. Go to [github.com/modelcontextprotocol/registry](https://github.com/modelcontextprotocol/registry)
-2. Fork the repository
-3. Add your server entry to the registry
-4. Submit a Pull Request
-
-### 3. GitHub MCP Registry
-
-Once published to the official MCP Community Registry, your server automatically appears in the GitHub MCP Registry.
-
-### 4. OpenTools
-
-1. Go to [opentools.com/registry](https://opentools.com/registry)
-2. Click "Submit Server"
-3. Fill in: name, description, GitHub URL
-4. Submit
-
-### 5. Glama
-
-1. Go to [glama.ai/mcp/servers](https://glama.ai/mcp/servers)
-2. Submit your server listing
-3. Include GitHub URL and description
-
-### 6. mcp.so
-
-1. Go to [mcp.so](https://mcp.so)
-2. Submit your server
-3. Include tool descriptions and examples
-
-### 7. PulseMCP
-
-1. Go to [pulsemcp.com](https://pulsemcp.com)
-2. Submit your server listing
+| Registry | Status | URL |
+|----------|--------|-----|
+| **Official MCP Registry** | Published | [registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io) |
+| **Smithery** | Published | [smithery.ai](https://smithery.ai) |
+| **mcp.so** | Live | [mcp.so/server/prop-firm-deal-finder](https://mcp.so/server/prop-firm-deal-finder) |
+| **Glama** | Submitted | [glama.ai/mcp/servers](https://glama.ai/mcp/servers) |
+| **PulseMCP** | Auto-indexed | [pulsemcp.com](https://pulsemcp.com) |
 
 ## Also Deploy: llms.txt
 
@@ -123,7 +123,8 @@ This structured data helps AI systems parse and cite your content.
 ```
 propfirmdealfinder-mcp-server/
 ├── src/
-│   ├── index.ts          # Server + all 6 tools
+│   ├── index.ts          # MCP server — stdio transport (local)
+│   ├── http-server.ts    # MCP server — HTTP transport (remote/Smithery)
 │   └── data.ts           # Firm data, types, helpers, formatters
 ├── public/
 │   ├── llms.txt          # For propfirmdealfinder.com/llms.txt
