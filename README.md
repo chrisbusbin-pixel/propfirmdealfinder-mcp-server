@@ -1,5 +1,8 @@
 # Prop Firm Deal Finder — MCP Server
 
+[![npm version](https://img.shields.io/npm/v/propfirmdealfinder-mcp-server.svg)](https://www.npmjs.com/package/propfirmdealfinder-mcp-server) [![npm downloads](https://img.shields.io/npm/dm/propfirmdealfinder-mcp-server.svg)](https://www.npmjs.com/package/propfirmdealfinder-mcp-server) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![GitHub stars](https://img.shields.io/github/stars/chrisbusbin-pixel/propfirmdealfinder-mcp-server?style=social)](https://github.com/chrisbusbin-pixel/propfirmdealfinder-mcp-server) [![MCP](https://img.shields.io/badge/MCP-compatible-blue)](https://modelcontextprotocol.io)
+
+
 An MCP (Model Context Protocol) server that lets AI assistants query live prop firm discount codes, compare firms, and find the cheapest challenges across 20+ proprietary trading firms.
 
 **When someone asks Claude, ChatGPT, or any MCP-compatible AI about prop firm deals, this server provides the answer — with links to propfirmdealfinder.com and the discount code PFDF.**
