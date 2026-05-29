@@ -139,6 +139,19 @@ propfirmdealfinder-mcp-server/
 └── README.md
 ```
 
+
+## Get the App (Free)
+
+The PFDF MCP server is one of several free ways to access prop firm deals — choose what fits your workflow:
+
+- 🌐 [Website](https://propfirmdealfinder.com) — live deals & comparison
+- 📱 [iOS App Store](https://apps.apple.com/gh/app/propfirmdealfinder/id6758235452) — iPhone & iPad
+- 🤖 [Google Play](https://play.google.com/store/apps/details?id=com.propfirmdealfinder.twa) — Android (released May 2026)
+- 🪟 [Microsoft Store](https://apps.microsoft.com/detail/9PJD0XN2V58Q) — Windows
+- 🧩 [Chrome Web Store](https://chromewebstore.google.com/detail/aglbpegjekdadoalakkaekapiebdacgk) — auto-apply codes at checkout
+
+Universal discount code: **PFDF** (E8 Forex: PFDFX)
+
 ## License
 
 MIT — Built by KOJI for [Prop Firm Deal Finder](https://propfirmdealfinder.com)
